@@ -10,11 +10,13 @@ public class Personnage {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-   @NotBlank(message = "Name is mandatory")
+    @NotBlank(message = "Name is mandatory")
     private String nom;
 
+    @NotBlank(message = "point de vie  is mandatory")
     private int point_de_vie;
 
+    @NotBlank(message = "type is mandatory")
     private String type;
 
     public long getId() {
